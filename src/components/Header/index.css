@@ -1,0 +1,93 @@
+.nav-container {
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.icon-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.header-icon {
+  width: 50px;
+}
+.header-heading {
+  font-family: DM Sans;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 133%;
+  color: #f7931e;
+}
+.ul-header-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.text-link {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: none;
+}
+.list-header-item {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 162%;
+  margin-left: 16px;
+  letter-spacing: -0.355556px;
+  color: #f7931e;
+  cursor: pointer;
+}
+.header-logout {
+  /* Action / Button / Small */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 133%;
+
+  color: #ffffff;
+
+  border-width: 0px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 8px;
+  cursor: pointer;
+  background: #f7931e;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+.hamburger-icon {
+  display: none;
+}
+.icons-display {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  .ul-header-list-mobile {
+    display: flex;
+    list-style-type: none;
+  }
+  .ul-header-list {
+    display: none;
+  }
+  .hamburger-icon {
+    display: flex;
+  }
+  .icons-display {
+    border-width: 0px;
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}

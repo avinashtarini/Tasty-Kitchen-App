@@ -1,0 +1,139 @@
+.food-items-results-container {
+  display: flex;
+  list-style-type: none;
+  flex-direction: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.banner-container {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: Roboto;
+  background: #333333;
+}
+.restaurant-banner-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.restaurant-banner {
+  width: 445px;
+  height: 280px;
+  left: 165px;
+  top: 176px;
+  border-radius: 8px;
+}
+.restarunat-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 133%;
+
+  letter-spacing: 0.2px;
+
+  color: #ffffff;
+}
+.restaurant-cuisine {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* Light / base / white */
+
+  color: #ffffff;
+}
+.restaurant-location {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* Light / base / white */
+
+  color: #ffffff;
+}
+.restaurant-ratings {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+.restaurant-rating-count {
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+
+  /* Light / blue-gray / 200 */
+
+  color: #e2e8f0;
+}
+.restaurant-cost-for-two {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+.each-list-icon {
+  width: 200px;
+  border-radius: 8px;
+}
+.each-item-name {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  letter-spacing: 0.2px;
+
+  /* Light / blue-gray / 700 */
+
+  color: #334155;
+}
+.each-item-food-type {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* Light / blue-gray / 700 */
+
+  color: #334155;
+}
+.each-item-food-rating {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+
+  display: flex;
+  align-items: center;
+
+  color: #0a1f44;
+}
+.each-list-container {
+  display: flex;
+  margin-bottom: 15px;
+  margin-left: 25px;
+}

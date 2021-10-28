@@ -1,0 +1,41 @@
+.footer-container {
+  font-family: DM Sans;
+  background: #0f172a;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.footer-heading {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 150%;
+}
+.footer-para {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 133%;
+}
+.social-icons {
+  font-size: 35px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 760px) {
+  .footer-container {
+    padding-top: 12px;
+    padding-bottom: 16px;
+    position: fixed;
+  }
+  .footer-heading {
+    font-size: 20px;
+  }
+  .footer-para {
+    font-size: 14px;
+  }
+  .social-icons {
+    font-size: 16px;
+  }
+}
