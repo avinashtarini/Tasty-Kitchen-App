@@ -1,15 +1,14 @@
 import {Component} from 'react'
 import Slider from 'react-slick'
-import {Redirect} from 'react-router-dom'
 import Loader from 'react-loader-spinner'
 import Cookies from 'js-cookie'
 import {BiChevronLeft, BiChevronRight} from 'react-icons/bi'
 import {MdSort} from 'react-icons/md'
+import DisplayRestaurants from '../DisplayRestaurants'
 import Header from '../Header'
 import Footer from '../Footer'
-import DisplayRestaurants from '../DisplayRestaurants'
+
 import './index.css'
-import './styles.css'
 
 const pageStatus = {
   success: 'S',
@@ -178,7 +177,7 @@ class Home extends Component {
   }
 
   renderPageNumber = () => {
-    const {limits, activePageNo} = this.state
+    const {activePageNo} = this.state
     if (activePageNo < 4) {
       this.setState(prevPageNo => ({activePageNo: prevPageNo.activePageNo + 1}))
 
@@ -192,7 +191,7 @@ class Home extends Component {
   }
 
   renderPreviousPageNumber = () => {
-    const {limits, activePageNo} = this.state
+    const {activePageNo} = this.state
     if (activePageNo > 1) {
       this.setState(prevPageNo => ({activePageNo: prevPageNo.activePageNo - 1}))
 
@@ -222,10 +221,10 @@ class Home extends Component {
             <DisplayRestaurants displayedList={restaurantsList} />
             <div className="pagination-container">
               <button
+                testid="pagination-left-button"
                 onClick={this.renderPreviousPageNumber}
                 type="button"
                 className="pagination-btn"
-                testid="pagination-left-button"
               >
                 <BiChevronLeft className="pagination-icon" />
               </button>
@@ -233,10 +232,10 @@ class Home extends Component {
                 <span testid="active-page-number">{activePageNo}</span> of 4
               </p>
               <button
+                testid="pagination-right-button"
                 onClick={this.renderPageNumber}
                 type="button"
                 className="pagination-btn"
-                testid="pagination-right-button"
               >
                 <BiChevronRight className="pagination-icon" />
               </button>

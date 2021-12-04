@@ -1,24 +1,19 @@
 import {Component} from 'react'
 import Counter from '../Counter'
-import Add from '../Add'
 
 import './index.css'
 
 class DisplayFoodItems extends Component {
-  state = {isFoodAdded: false}
-
   displayBanner = () => {
     const {foodItemsDetails} = this.props
     const {
       rating,
-      id,
       name,
       costForTwo,
       cuisine,
       imageUrl,
       reviewsCount,
       opensAt,
-      itemsCount,
       location,
     } = foodItemsDetails
 
@@ -42,6 +37,7 @@ class DisplayFoodItems extends Component {
                   {costForTwo} Cost for two
                 </p>
               </div>
+              <p>{opensAt}</p>
             </div>
           </div>
         </div>
@@ -49,16 +45,7 @@ class DisplayFoodItems extends Component {
     )
   }
 
-  increaseQuantity = cartItem => {}
-
-  decreaseQuantity = cartItem => {}
-
-  addFoodItemsToCart = cartItem => {
-    localStorage.setItem('cart', cartItem)
-  }
-
   displayFoodItemsList = () => {
-    const {isFoodAdded} = this.state
     const {foodItemsDetails} = this.props
     const {foodItems} = foodItemsDetails
     return (
@@ -77,15 +64,7 @@ class DisplayFoodItems extends Component {
               <p className="each-item-food-rating">
                 {eachFoodItems.ratingFood}
               </p>
-              <Counter
-                cartItem={eachFoodItems}
-                incrementCartCount={this.increaseQuantity}
-                decrementCartCount={this.decreaseQuantity}
-              />
-              <Add
-                cartDetails={eachFoodItems}
-                addToCart={this.addFoodItemsToCart}
-              />
+              <Counter thisFoodItem={eachFoodItems} />
             </div>
           </li>
         ))}

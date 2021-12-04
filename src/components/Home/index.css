@@ -9,6 +9,15 @@
   padding-left: 25px;
   padding-right: 25px;
 }
+.container {
+  padding: 10px;
+}
+.offer-class {
+  margin: auto;
+  height: 250px;
+  width: 100%;
+}
+
 .sorting-container {
   display: flex;
   align-items: center;

@@ -76,6 +76,7 @@ class RestaurantDetails extends Component {
 
   foodItemsSuccessView = () => {
     const {foodList} = this.state
+
     return <DisplayFoodItems foodItemsDetails={foodList} />
   }
 
